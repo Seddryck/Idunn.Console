@@ -6,7 +6,7 @@ if (Test-Path $lib)
 }
 new-item -Path $lib -ItemType directory
 new-item -Path $root\.nupkg -ItemType directory -force
-Copy-Item $root\Idunn\bin\Debug\* $lib
+Copy-Item $root\Idunn.Console\bin\Debug\* $lib
 
 $version = $env:GitVersion_NuGetVersion
 if ([string]::IsNullOrEmpty($version))
