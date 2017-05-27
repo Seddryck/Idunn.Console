@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>Idunn</id>
+    <id>Idunn.Core</id>
     <version>$version$</version>
-    <title>Idunn</title>
+    <title>Idunn.Core</title>
     <authors>Cédric L. Charlier</authors>
     <owners>Cédric L. Charlier</owners>
     <licenseUrl>http://github.com/Seddryck/Idunn.Console/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://github.com/Seddryck/Idunn.Console</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Command line tool to ensure that a principal effectively has a set of permissions</description>
-    <releaseNotes>First release of Idunn.Console</releaseNotes>
+    <description>Core functtions for project Idunn</description>
+    <releaseNotes>First release of Idunn.Core</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Security Deployment</tags>
     <dependencies>
-      <dependency id="Idunn.Core" version="0.9"/>
+      <dependency id="StringTemplate4" version="4.0"/>
+      <dependency id="YamlDotNet"  version="4.2"/>
     </dependencies>
   </metadata>
 </package>  
