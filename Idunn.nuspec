@@ -13,5 +13,9 @@
     <releaseNotes>First release of Idunn.Console</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Security Deployment</tags>
+    <dependencies>
+      <dependency id="Antlr4.StringTemplate" version="4.0"/>
+      <dependency id="YamlDotNet"  version="4.2"/>
+    </dependencies>
   </metadata>
-</package>
+</package>  

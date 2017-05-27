@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using Idunn.Console.Parser;
-using Idunn.Console.Model;
-using Idunn.Console.Template;
-using Idunn.Console.Execution;
+using Idunn.Core.Parser;
+using Idunn.Core.Model;
+using Idunn.Core.Template;
+using Idunn.Core.Execution;
 
-namespace Idunn.Console
+namespace Idunn.ConsoleUI
 {
     public class Program
     {

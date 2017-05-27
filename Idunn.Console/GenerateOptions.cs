@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Idunn.Console
+namespace Idunn.ConsoleUI
 {
     [Verb("generate", HelpText = "Generate a file containing the code to execute to perform the permissions' check.")]
     public class GenerateOptions

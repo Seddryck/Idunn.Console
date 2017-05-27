@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D24B4A36-A9CA-4967-85B1-50257F5C6293}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Idunn.Core</RootNamespace>
+    <AssemblyName>Idunn.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr4.StringTemplate, Version=4.0.7.0, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\StringTemplate4.4.0.8\lib\net35-client\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="YamlDotNet, Version=4.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YamlDotNet.4.2.1\lib\net35\YamlDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Execution\ExecutionEngine.cs" />
+    <Compile Include="Execution\ExecutorAttribute.cs" />
+    <Compile Include="Execution\ExecutorContainer.cs" />
+    <Compile Include="Execution\IExecutorEngine.cs" />
+    <Compile Include="Execution\IExecutorFactory.cs" />
+    <Compile Include="Model\ModelFactory.cs" />
+    <Compile Include="Parser\AbstractParser.cs" />
+    <Compile Include="Parser\EngineParserFactory.cs" />
+    <Compile Include="Parser\IEngineParser.cs" />
+    <Compile Include="Parser\IParser.cs" />
+    <Compile Include="Parser\IParserContainer.cs" />
+    <Compile Include="Parser\IParserRegister.cs" />
+    <Compile Include="Parser\IRootParser.cs" />
+    <Compile Include="Parser\ParserContainer.cs" />
+    <Compile Include="Parser\RootParser.cs" />
+    <Compile Include="Parser\XmlEngineParser.cs" />
+    <Compile Include="Parser\XmlReaderFactory.cs" />
+    <Compile Include="Parser\YamlEngineParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Template\StringTemplate\IStringTemplateEngine.cs" />
+    <Compile Include="Template\StringTemplate\ITemplateFactory.cs" />
+    <Compile Include="Template\StringTemplate\ITemplateFactoryRegister.cs" />
+    <Compile Include="Template\StringTemplate\StringTemplateEngine.cs" />
+    <Compile Include="Template\StringTemplate\TemplateInfo.cs" />
+    <Compile Include="Template\TemplateContainer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

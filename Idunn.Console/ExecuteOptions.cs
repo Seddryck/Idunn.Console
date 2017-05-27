@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Idunn.Console
+namespace Idunn.ConsoleUI
 {
     [Verb("execute", HelpText = "Execute the permission checks and report the results.")]
     public class ExecuteOptions
