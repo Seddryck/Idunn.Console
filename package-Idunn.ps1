@@ -1,4 +1,4 @@
-$root = "C:\Users\cedri\Projects\Idunn\Idunn.Console" #(split-path -parent $MyInvocation.MyCommand.Definition)
+$root = (split-path -parent $MyInvocation.MyCommand.Definition)
 $lib = "$root\.package\Idunn\lib\45\"
 $tools = "$root\.package\Idunn\tools\"
 
