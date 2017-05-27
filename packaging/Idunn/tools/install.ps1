@@ -14,6 +14,6 @@ param($installPath, $toolsPath, $package, $project)
 $projectName = $project.Name
 $config = $project.ConfigurationManager.ActiveConfiguration
 $config.Properties.Item("StartAction").Value = 1
-$config.Properties.Item("StartProgram").Value = "Idunn.exe"
+$config.Properties.Item("StartProgram").Value = "$installPath\tools\Idunn.exe"
 $config.Properties.Item("StartArguments").Value = "TestSuite.nunit /runselected"
 $config.Properties.Item("StartWorkingDirectory").Value = "$installPath\..\..\$projectName\bin\debug\"
